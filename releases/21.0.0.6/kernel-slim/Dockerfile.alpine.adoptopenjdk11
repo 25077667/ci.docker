@@ -22,7 +22,6 @@ LABEL org.opencontainers.image.authors="Arthur De Magalhaes, Chris Potter, Leo C
 
 COPY helpers /opt/ol/helpers
 COPY fixes/ /opt/ol/fixes/
-COPY --from=aquasec/tracee:latest /tracee/ /tracee
 
 # Install Open Liberty
 RUN apk update && apk add --no-cache shadow wget unzip openssl bash elfutils-dev \
